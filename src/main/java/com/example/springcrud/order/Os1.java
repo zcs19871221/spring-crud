@@ -1,23 +1,15 @@
 package com.example.springcrud.order;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 @Service
-public class OrderServiceImpl implements OrderService {
+public class Os1 implements OrderService {
 
     public String name;
-
-    private OrderRepository orderRepository;
-
-    public OrderServiceImpl(OrderRepository orderRepository) {
-        this.orderRepository = orderRepository;
-    }
-
     public OrderResponseDto get() {
-        Long id = 1234L;
-        OrderDao order =  orderRepository.getReferenceById(id);
-        return new OrderResponseDto("hello");
+        return null;
     }
 
     @Override

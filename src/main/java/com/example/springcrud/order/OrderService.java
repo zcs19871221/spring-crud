@@ -1,9 +1,11 @@
 package com.example.springcrud.order;
 
-import org.springframework.stereotype.Service;
-
 
 public interface OrderService {
 
-    public OrderResponse get();
+    public OrderResponseDto get();
+
+    public void setName(String name);
+
+    public String getName();
 }

@@ -2,14 +2,13 @@ package com.example.springcrud.order;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Proxy;
 
 @Entity
 @Data
-@Table(name = "productOrder")
+@Table(name = "product_order")
 @Proxy(lazy = false)
-public class Order {
+public class OrderDao {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
