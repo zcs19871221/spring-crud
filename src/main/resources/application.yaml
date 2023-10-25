@@ -1,6 +1,6 @@
 spring:
   jpa:
-    database-platform: "${DB_DIALECT:org.hibernate.dialect.MySQL8Dialect}"
+    database-platform: "${DB_DIALECT:org.hibernate.dialect.MySQLDialect}"
     show-sql: true
     generate-ddl: true
     hibernate:
